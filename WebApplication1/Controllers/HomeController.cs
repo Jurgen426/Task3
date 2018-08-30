@@ -14,13 +14,9 @@ namespace WebApplication1.Controllers
 
         public ActionResult Index()
         {
-
             //IEnumerable<Category> categories = db.Categories;
             var categories = db.Categories;
             ViewBag.Categories = categories;
-           
-            
-
             return View();
         }
 
@@ -77,7 +73,7 @@ namespace WebApplication1.Controllers
 
 
 
-            public ActionResult About()
+        public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 

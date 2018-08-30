@@ -8,12 +8,10 @@
     <table>
         <tr>
             <td><p>Категория</p></td>
-           
-        </tr>
+       </tr>
         @foreach (var cat in ViewBag.Categories)
         {
             <tr>
-                
                 <td><p><a href="/Home/ShowProducts/@cat.Id">@cat.Name</a></p></td>
             </tr>
         }
